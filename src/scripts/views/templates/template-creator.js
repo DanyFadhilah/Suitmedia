@@ -1,3 +1,4 @@
+import lazySizes from 'lazysizes';
 import CONFIG from '../../globals/config';
 
 function publishDate(published_at) {
@@ -12,7 +13,7 @@ function publishDate(published_at) {
 
 const pageMain = (page) => `
 <article class="item" id="${page.id}">
-  <img class="item-picture lazyload" crossorigin="anonymous" data-src="${page.medium_image[0].url}" alt="${page.medium_image[0].file_name}">
+  <img class="item-picture lazyload" crossorigin="anonymous" data-src="../images/picture.jpg" alt="${page.medium_image[0].file_name}">
   <div class="detail-item">
     <p>${publishDate(page.published_at)}</p>
     <a href="#/detail/${page.id}" class="link-item"><h3>${page.title}</h3></a>

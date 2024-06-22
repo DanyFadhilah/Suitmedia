@@ -25,7 +25,17 @@ body {
   top: 0;
   z-index: 99;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-  background-color: #f96500;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  background-color: #f96500; 
+}
+
+.app-bar.hide {
+  transform: translateY(-100%);
+}
+
+.app-bar.show {
+  transform: translateY(0);
+  opacity: 80%;
 }
  
 .app-bar .app-bar__menu {
