@@ -4,6 +4,7 @@ import '../styles/responsive.css';
 import './views/component/header';
 import './views/component/footer';
 import './views/component/banner';
+import lazySizes from 'lazysizes';
 import App from './views/app';
 
 const app = new App({

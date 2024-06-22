@@ -1,4 +1,3 @@
-import lazySizes from 'lazysizes';
 import CONFIG from '../../globals/config';
 
 function publishDate(published_at) {
