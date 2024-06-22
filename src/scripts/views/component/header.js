@@ -33,13 +33,10 @@ class HeaderBody extends HTMLElement {
 
     window.addEventListener('scroll', () => {
       let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      
       if (scrollTop > lastScrollTop) {
-        // Scroll ke bawah
         header.classList.add('hide');
         header.classList.remove('show');
       } else {
-        // Scroll ke atas
         header.classList.add('show');
         header.classList.remove('hide');
       }
@@ -50,7 +47,7 @@ class HeaderBody extends HTMLElement {
         header.classList.remove('scrolled');
       }
 
-      lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Untuk mobile atau browser yang setting scrollnya negatif
+      lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
     });
   }
 }

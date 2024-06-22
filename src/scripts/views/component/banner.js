@@ -28,7 +28,7 @@ class Banner extends HTMLElement {
       contact: 'Contact Us',
       404: '404',
     };
-    const newTitle = titleMap[hash] || 'Default Title';
+    const newTitle = titleMap[hash] || 'Ideas';
     this.querySelector('.banner-text h1').textContent = newTitle;
   }
 }
