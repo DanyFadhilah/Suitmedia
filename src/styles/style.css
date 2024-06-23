@@ -98,6 +98,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
 }
 
 .banner-image {
@@ -108,7 +109,6 @@ body {
     height: 100%;
     background-size: cover;
     background-attachment: fixed;
-    clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
     z-index: -1;
 }
 
